@@ -1,0 +1,163 @@
+body {
+    background-image: linear-gradient(#FFF6A3, #FFFCDE);
+    margin: 0;
+}
+
+
+#first-line, #second-line{
+    font-family: 'Comfortaa', cursive;
+    font-size: 100px;
+}
+
+.egg-text {
+    font-family: 'Comfortaa', cursive;
+    font-size: 50px;
+    color: #FBAF3F;
+}
+
+#text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+#second-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.gudetama {
+    height: 200px;
+    width: 200px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+    opacity: 90%;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    opacity: 100%;
+}
+
+.glide {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center
+}
+
+.glide__slide {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.glide__slide:hover {
+    cursor: pointer;
+}
+
+@keyframes wave {
+	0% { transform: translateY(0px); }
+	50% { transform: translateY(-30px); }
+	100% { transform: translateY(0px); }
+}
+
+.glide__slide img {
+    padding-bottom: 30px;
+    animation-name: wave;
+	animation-duration: 2.5s;
+	animation-iteration-count: infinite;
+}
+
+.step-num {
+    font-family: 'Comfortaa', cursive;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.step-text {
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 14px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#recipe {
+    font-family: 'Comfortaa', cursive;
+    font-size: 45px;
+}
+
+#video-text {
+    font-family: 'Comfortaa', cursive;
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+}
+
+#topleft-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+#home-icon {
+    height: 55px;
+    width: 55px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+#stepbox {
+    width: 700px;
+    margin-left: 40px;
+    padding: 20px;
+    background-color: #FFC269;
+    border-radius: 6%;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+}
+
+#rightbox, #video-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#video-box:hover {
+    cursor: pointer;
+}
+
+#thumbnail {
+    height: 90%;
+    width: 90%;
+    border-radius: 3%;
+}

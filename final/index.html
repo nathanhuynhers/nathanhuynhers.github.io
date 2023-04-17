@@ -1,6 +1,55 @@
-<!DOCTYPE html>
 <html>
-    <body>
-        FINAL
-    </body>
+<head>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/glide.core.min.css">
+    <title>How to Cook an Egg!</title>
+    <link rel="icon" type="image/png" href="assets/images/eggicon.png"/>
+</head>
+<body>
+    <div id="text-box">
+        <div id="first-line"><center>How to Cook an</center></div>
+        <div id="second-line">
+            <img src="assets/images/gudetama_1.png" class="gudetama">
+            <p>Egg</p>
+            <img src="assets/images/gudetama_2.png" class="gudetama">
+        </div>
+    </div>
+    <div id="egg-container">
+        <div class="glide">
+            <div class="glide__arrows" data-glide-el="controls">
+                <button data-glide-dir="<"><img src="assets/images/leftbutton.png"></button>
+            </div>
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                    <a href="fried_egg.html"><img src="assets/images/fried_egg.png"></a>
+                    <div class="egg-text">Fried Egg</div>
+                </li>
+                <li class="glide__slide">
+                    <a href="boiled_egg.html"><img src="assets/images/boiled_egg.png"></a>
+                    <div class="egg-text">Boiled Egg</div>
+                </li>
+                <li class="glide__slide">
+                    <a href="scrambled_egg.html"><img src="assets/images/scrambled_egg.png"></a>
+                    <div class="egg-text">Scrambled Egg</div>
+                </li>
+              </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button data-glide-dir=">"><img src="assets/images/rightbutton.png"></button>
+            </div>
+          </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+<script>
+    const config = {
+        type: 'carousel',
+    }
+    new Glide('.glide', config).mount()
+</script>
 </html>
